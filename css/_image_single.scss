@@ -1,0 +1,80 @@
+body{
+  &.compose-mode{
+	.fl-jarallax{
+	  .jarallax-img {
+		display: none;
+	  }
+	}
+  }
+}
+.fl-single-img {
+  overflow: hidden;
+  position: relative;
+  a.fl_single-img-link{
+	transition: 400ms ease-in-out;
+	&:hover{
+	  img{
+		opacity: 0.7;
+		transition: 400ms ease-in-out;
+	  }
+	}
+  }
+  .fl-single-img--mask{
+	position: absolute;
+	top:0;
+	left: 0;
+	display: block;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+  }
+}
+.fl-jarallax > .jarallax-img {
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+ // Decoration Image
+.fl-image-decoration{
+  position: absolute;
+  display: inline-block;
+  width: 4px;
+  height: 30px;
+  &:before{
+	position: absolute;
+	bottom: 100%;
+	display: block;
+	width: 4px;
+	height: 10px;
+	content: '';
+	background-color: #fff;
+	z-index: 9;
+  }
+  &.fl-img-dec-btn-left{
+	left: 20px;
+	bottom: -30px;
+  }
+  &.fl-img-dec-btn-right{
+	right: 20px;
+	bottom: -30px;
+  }
+  &.fl-img-dec-top-left{
+	left: 20px;
+	top: -30px;
+	&:before{
+	  top: 100%;
+	}
+  }
+  &.fl-img-dec-top-right{
+	right: 20px;
+	top: -30px;
+	&:before{
+	  top: 100%;
+	}
+  }
+}

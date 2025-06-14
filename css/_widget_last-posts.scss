@@ -1,0 +1,50 @@
+// Last Post Widget
+.fl-last-post-widget{
+  .fl-widget-last-post-wrapper{
+	.fl--last-post{
+		padding: 25px 0;
+		border-bottom: 1px #eeeeee solid;
+	  .fl-last-post-img{
+		float: left;
+		margin-right: 22px;
+	  }
+	  .fl-last-post-info{
+		.fl-post-title{
+		  display: block;
+		  margin-bottom: 25px;
+		  line-height: 18px;
+		  letter-spacing: 0;
+		  text-transform: none;
+		  font-size: 18px;
+		  a{
+			line-height: 22px;
+			color: #222;
+		  }
+		}
+		.fl--post-date-info{
+		  line-height: 1;
+		  font-size: 13px;
+		  color: #333;
+			i{
+				padding-right: 10px;
+			}
+		}
+	  }
+		&:first-child{
+			padding-top: 0px;
+		}
+	}
+  }
+}
+
+// Sidebar Custom Style
+.fl-header-sidebar{
+ .sidebar_container{
+   .fl_last_post_widget{
+     .fl--last-post{
+     	padding: 15px 20px 10px 0;
+     	background: #f7f7f7;
+     }
+   }
+ }
+}

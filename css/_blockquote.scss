@@ -1,0 +1,22 @@
+.fl-vc-blockquote{
+	.fl-text-wrapper{
+	  display: inline-block;
+	  line-height: 1.5;
+	  font-size: 16px; 
+	  color: #222;
+	}
+	.fl-author-content{
+	  margin-top: 30px;
+	  color: #666;
+	  .fl-author-name{
+		font-size: 14px;
+	  }
+	  .fl-author-profession{
+		margin-left: 5px;
+		font-size: 12px;
+		margin-bottom: 2px;
+	  }
+	}
+  }
+
+

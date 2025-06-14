@@ -1,0 +1,127 @@
+.fl-pricing--table{
+  padding-top: 41px;
+  text-align: center;
+  vertical-align: bottom;
+  color: #666;
+  border: 5px solid #efefef;
+  background-color: #fff;
+  	&.fl-active-pricing{
+	  .fl-pricing-period{
+		margin-bottom: 23px;
+	  }
+		.fl-pricing-decor{
+		  display: inline-block;
+		  width: 4px;
+		  height: 30px;
+		  background-color: #ddd;
+		  margin-bottom: 15px;
+		}
+	}
+	.fl-pricing-title{
+	  margin-top: 17px;
+	  margin-bottom: 15px;
+	  font-size: 14px;
+	  letter-spacing: .1em;
+	  text-transform: uppercase;
+	}
+  .fl-pricing{
+	font-weight: 400!important;
+	position: relative;
+	margin-bottom: 6px;
+	font-size: 50px;
+	line-height: 1;
+	color: #222;
+  }
+  .fl-pricing-period{
+	display: block;
+	margin-bottom: 46px;
+	font-size: 14px;
+	line-height: 1;
+	letter-spacing: .05em;
+	color: #666;
+  }
+	// Btn
+  .fl-pricing-button{
+	position: relative;
+	margin-bottom: 50px;
+	.fl-pricing_link{
+	  border: 1px solid #eaeaeb;;
+	  position: relative;
+	  z-index: 100;
+	  background-color: #fff;
+	  overflow: hidden;
+	  display: inline-block;
+	  margin-bottom: 0;
+	  padding: 11px 25px;
+	  font-weight: 400;
+	  font-size: 11px;
+	  text-align: center;
+	  vertical-align: middle;
+	  cursor: pointer;
+	  white-space: nowrap;
+	  user-select: none;
+	  color: #777;
+	  transition: all .3s;
+	  letter-spacing: .02em;
+	  i{
+		display: inline-block;
+		border-width: 4px 6px;
+		border-style: solid;
+		border-color: transparent;
+	  }
+	  &:after{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 110%;
+		height: 100%;
+		content: '';
+		transform: skewX(-50deg);
+		background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) no-repeat -2em 0;
+		background-size: 2em 100%;
+	  }
+	  &:hover{
+		transition: all .3s;
+		box-shadow: 0 0 4px 0 #ccc;
+		&:after{
+		  transition: .7s linear;
+		  background-position: 150% 0;
+		}
+	  }
+	}
+	&:before{
+	  position: absolute;
+	  top: 50%;
+	  right: 0;
+	  left: 0;
+	  content: '';
+	  border-bottom: 1px solid #efefef;
+	}
+  }
+  // Description List
+  .fl-pricing-description{
+	list-style: none;
+	margin-left: 0!important;
+	margin-top: 40px;
+	padding-left: 0;
+	margin-bottom: 52px!important;
+	li{
+	  padding-left: 0!important;
+	  padding-top: 0!important;
+	  list-style: none!important;
+	  position: relative;
+	  margin-bottom: 12px;
+	  line-height: 25px;
+	  i{
+		padding-right: 10px;
+	  }
+	  &.fl-disable-content{
+		color: #ccc;
+		i{
+		  color: #ccc!important;
+		}
+	  }
+	}
+  }
+
+}

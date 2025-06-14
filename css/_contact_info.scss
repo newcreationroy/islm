@@ -1,0 +1,32 @@
+.fl-contact-info{
+	.fl-contact--info-wrapper{
+		display: inline-block;
+		margin: 0 auto;
+		.fl-info-contact{
+			display: inline-block;
+			width: 350px;
+			padding: 50px;
+			-webkit-box-shadow: -2px 2px 44px -19px rgba(0,0,0,.4);
+			-moz-box-shadow: -2px 2px 44px -19px rgba(0,0,0,.4);
+			box-shadow: -2px 2px 44px -19px rgba(0,0,0,.4);
+			margin: 15px;
+			background: #fff;
+			span.title-contact{
+				display: block;
+				font-size: 26px;
+			}
+			.fl-contact-title-decor{
+				width: 100%;
+				content: '';
+				border-bottom: 3px solid transparent;
+				-webkit-border-image: url(../css/images/border_widget.png);
+				-o-border-image: url(../css/images/border_widget.png);
+				border-image-slice: 2;
+				border-image-outset: 0;
+				background-color: transparent;
+				margin: 10px 0 35px;
+			}
+		}
+	}
+}
+

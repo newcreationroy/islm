@@ -1,0 +1,33 @@
+.fl-button-wrapper-vc{
+	font-size: 18px;
+  .fl-btn-vc{
+	  padding: 20px 40px;
+	  border-radius: 2%;
+	  transition: all 0.2s ease-in;
+	  display: inline-block;
+	a{
+		position: relative;
+		z-index: 1;
+		color: inherit;
+	}
+	i{
+	  transition: all .3s;
+	  display: inline-block;
+	  border-width: 4px 6px;
+	  border-style: solid;
+	  border-color: transparent;
+	}
+	//Small Size
+	&.fl-small-btn{
+	  padding: 10px 25px;
+	}
+	//Large Size
+	&.fl-large-btn{
+	  padding: 25px 40px;
+	}
+  }
+}
+
+.fl-button-style--2{
+	border: 2px white solid;
+}

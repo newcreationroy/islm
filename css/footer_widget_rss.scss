@@ -1,0 +1,51 @@
+$color-border: rgba(238, 238, 238, 0.2)!important;
+.widget_rss {
+  .rsswidget img {
+	display: none;
+  }
+  ul{
+	  font-size: 11px;
+	padding: 0;
+	li {
+		border-bottom: 1px solid $color-border;
+		line-height: 1.6;
+		padding-bottom: 20px;
+		margin-bottom: 15px;
+		a{
+			color: $color_text;
+		}
+	  &:last-child {  
+		border-bottom: none!important;
+		padding-bottom: 0;
+	  }
+	  .rsswidget {
+		opacity: .8;
+		display:block;
+		margin-bottom: 5px;
+		transition: opacity .3s ease;
+		&:hover {
+		  opacity: .6;
+		}
+	  }
+	  .rss-date {
+		display:block;
+		margin-bottom: 5px;
+	  }
+	  .rssSummary {
+		margin-bottom: 10px;
+	  }
+	  .rss-date {
+		  color: $color_text;
+	  }
+	  cite {
+		position:relative;
+		display:block;
+		font-style: normal;
+		color: $color_text;
+	  }
+
+	}
+  }
+}
+
+

@@ -1,0 +1,29 @@
+// Last Post Footer
+.fl-widget-last-post-wrapper{
+	.fl--last-post{
+		margin-top: 0;
+		background: transparent!important;
+		padding: 0 0 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid rgba(221,221,221,0.1);
+		.fl-last-post-img{
+			width: 70px;
+		}
+		.fl-last-post-info{
+			padding-left: 70px;
+			.fl-post-title{
+				color: #ccc;
+				margin-top: 0;
+				a{
+					font-size: 11px;
+					color: inherit!important;
+				}
+			}
+		}
+		&:last-child{
+			border-bottom: none;
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+	}
+}

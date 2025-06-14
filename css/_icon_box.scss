@@ -1,0 +1,387 @@
+.fl-icon-box{
+	direction: ltr!important;
+
+		//Icon Style One
+		&.fl-icon-box-style--1{
+			padding-bottom: 45px;
+			.fl-icon-box-image-wrapper{
+				position: relative;
+				margin-bottom: 45px;
+				&:hover{
+					.fl-icon-box-icon-wrapper{
+						img{
+							filter: brightness(0) invert(1);
+						}
+					}
+
+				}
+				.fl-icon-box-icon-wrapper{
+					border-radius: 50%;
+					position: absolute;
+					background: #ffffff;
+					width: 100px;
+					height: 100px;
+					top: 225px;
+					-webkit-box-shadow: -1px 28px 125px -10px rgba(45,45,45,0.4);
+					-moz-box-shadow: -1px 28px 125px -10px rgba(45,45,45,0.4);
+					box-shadow: -1px 28px 125px -10px rgba(45,45,45,0.4);
+					left: 0;
+					right: 0;
+					margin: auto;
+					transition: all .3s;
+					&:hover{
+						img{
+							filter: brightness(0) invert(1);
+						}
+					}
+					i{
+						font-size: 36px;
+						line-height: 0.9em;
+						height: 36px;
+						display: block;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						margin: auto;
+						position: absolute;
+					}
+					img{
+						height: 36px;
+						display: block;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						margin: auto;
+						position: absolute;
+					}
+				}
+			}
+			.fl-icon-box-title{
+				font-size: 26px;
+				font-weight: 700;
+				margin-bottom: 25px;
+			}
+		}
+
+		//Icon Style Two
+		&.fl-icon-box-style--2{
+			padding-bottom: 65px;
+			.fl-icon-box-wrapper{
+				background: #ffffff;
+				-webkit-box-shadow: -2px 2px 44px -19px rgba(0,0,0,0.2);
+				-moz-box-shadow: -2px 2px 44px -19px rgba(0,0,0,0.2);
+				box-shadow: -2px 2px 44px -19px rgba(0,0,0,0.2);
+				transition: all .3s;
+				&:hover{
+					.fl-icon-box-btn{
+						a{
+							border-bottom: 2px solid #ffffff;
+							padding-bottom: 2px;
+						}
+						span{
+							border-bottom: 2px solid #ffffff;
+							padding-bottom: 2px;
+						}
+					}
+					img.fl-icon-box-icon{
+						filter: brightness(0) invert(1);
+
+					}
+					.fl-icon-box-title-decor{
+						filter: brightness(0) invert(1);
+					}
+				}
+				.fl-icon-box-icon-wrapper{
+					padding-top: 60px;
+					padding-bottom: 25px;
+					i{
+						font-size: 36px;
+						line-height: 0.9em;
+						height: 36px;
+						display: block;
+						text-align: center;
+						transition: all .3s;
+
+					}
+					img{
+						height: 36px;
+						display: block;
+						margin:0 auto;
+
+					}
+				}
+				.fl-icon-box-title{
+					font-size: 26px!important;
+					text-align: center;
+					padding-bottom: 30px;
+					transition: all .3s;
+
+				}
+				.fl-icon-box-title-decor{
+					width: 120px;
+					height: 20px;
+					margin-left: auto;
+					margin-right: auto;
+					z-index: 333;
+					background: url(../images/ornament_after_post.png) no-repeat;
+					transition: all .3s;
+
+				}
+				.fl-icon-box-content{
+					padding: 30px;
+					text-align: center;
+					transition: all .3s;
+
+				}
+				.fl-icon-box-btn{
+					text-align: center;
+					padding-bottom: 60px;
+					transition: all .3s;
+					a{
+						font-size: 18px;
+					}
+				}
+			}
+		}
+
+		//Icon Style Three
+		&.fl-icon-box-style--3{
+			padding-bottom: 65px;
+			.fl-icon-box-wrapper{
+				background: #ffffff;
+				-webkit-box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+				-moz-box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+				box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+				transition: all .3s;
+				position: relative;
+				&:after{
+					content: ' ';
+					background: url(../css/images/icon_box_three_bg.png) no-repeat;
+					position: absolute;
+					bottom: 0;
+					width: 100%;
+					height: 100%;
+					background-position: bottom;
+					overflow: hidden;
+				}
+				&:hover{
+					.fl-icon-box-title-decor{
+						filter: grayscale(0%);
+						opacity: 1;
+					}
+				}
+				.fl-icon-box-image-wrapper{
+					padding-bottom: 60px;
+
+				}
+				.fl-icon-box-title{
+					font-size: 26px;
+					text-align: center;
+					padding-bottom: 30px;
+				}
+				.fl-icon-box-title-decor{
+					width: 120px;
+					height: 20px;
+					margin-left: auto;
+					margin-right: auto;
+					z-index: 333;
+					background: url(../images/ornament_after_post_color.png) no-repeat;
+					transition: all .3s;
+				}
+				.fl-icon-box-content{
+					padding: 30px 30px 65px 30px;
+					text-align: center;
+					transition: all .3s;
+				}
+			}
+		}
+
+		//Icon Style Four
+		&.fl-icon-box-style--4{
+			padding-bottom: 30px;
+			.fl-icon-box-image-wrapper{
+				position: relative;
+				.fl-icon-box-icon-wrapper{
+					border-radius: 50%;
+					position: absolute;
+					background: #ffffff;
+					width: 60px;
+					height: 60px;
+					top: 215px;
+					-webkit-box-shadow: -1px 28px 125px -10px rgba(45,45,45,0.85);
+					-moz-box-shadow: -1px 28px 125px -10px rgba(45,45,45,0.85);
+					box-shadow: -1px 28px 125px -10px rgba(45,45,45,0.85);
+					right: 35px;
+					margin: auto;
+					transition: all .3s;
+					&:hover{
+						img{
+							filter: brightness(0) invert(1);
+						}
+					}
+					i{
+						text-align: center;
+						font-size: 24px;
+						line-height: 0.9em;
+						height: 36px;
+						display: block;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						margin: auto;
+						position: absolute;
+					}
+					img{
+						height: 24px;
+						display: block;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						margin: auto;
+						position: absolute;
+					}
+				}
+
+			}
+			.fl-icon-box-wrapper{
+				padding: 35px;
+				transition: all .3s;
+				background: #ffffff;
+				-webkit-box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+				-moz-box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+				box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+				transition: all .3s;
+
+				.fl-icon-box-title-contain{
+					display: flex;
+					.fl-icon-box-icon-wrapper{
+						margin-right: 15px;
+						img.fl-icon-box-icon{
+							width: 18px;
+						}
+						i{
+							font-size: 18px;
+						}
+					}
+					.fl-icon-box-title{
+						line-height: 32px;
+						font-size: 22px;
+						font-weight: 700;
+						color: inherit!important;
+
+					}
+				}
+				.fl-icon-box-content{
+					padding-top: 20px;
+					padding-bottom: 20px;
+				}
+			}
+			&:hover{
+				i{
+					color: inherit!important;
+				}
+				a.fl-md-trigger{
+					color: #fff!important;
+					border-bottom: 2px solid #ffffff;
+				}
+			}
+		}
+}
+
+//Modal Box
+.fl-md-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	max-width: 630px;
+	min-width: 320px;
+	z-index: 2000;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+
+}
+.fl-md-show {
+	visibility: visible;
+}
+.fl-md-content{
+	min-height: 10px;
+	overflow: auto;
+	max-height: 500px;
+	padding-right: 20px;
+}
+.fl-md-content::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: #F5F5F5;
+	padding-left: 15px;
+}
+.fl-md-content::-webkit-scrollbar {
+	width: 12px;
+	background-color: #F5F5F5;
+	padding-left: 15px;
+}
+.fl-md-content::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #D62929;
+	padding-left: 15px;
+}
+
+
+.fl-md-effect .fl-md-content {
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	-ms-transform: scale(0.7);
+	transform: scale(0.7);
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.fl-md-show.fl-md-effect .fl-md-content{
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+.fl-md-show button.fl-md-close{
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+/* Content styles */
+.fl-md-content {
+	color: #222;
+	position: relative;
+	margin: 0 auto;
+	background: #fff;
+	margin: 30px;
+}
+.fl-md-modal{
+	background: #fff;
+	-webkit-box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+	box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+}
+button.fl-md-close{
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	padding: 0px;
+}

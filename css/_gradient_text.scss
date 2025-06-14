@@ -1,0 +1,35 @@
+.fl-gradient-text{
+  .fl-suffix-gr-text,.fl-prefix-gr-text{
+	font-size: 16px;
+	letter-spacing: .03em;
+	color: #222;
+  }
+
+.fl-gradient-text-span{
+  line-height: 1;
+  position: relative;
+  top: -7px;
+  display: inline-block;
+  margin: 0 12px;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 400;
+  vertical-align: middle;
+  opacity: .95;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+}
+@media (max-width: 767px){
+  .fl-gradient-text{
+    text-align: center;
+    .fl-gradient-text-span{
+      width: 100%;
+      display: block;
+      margin: 0;
+    }
+  }
+
+}
+

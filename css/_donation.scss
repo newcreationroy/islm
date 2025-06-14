@@ -1,0 +1,1164 @@
+//Donates style one
+.fl-donate-style-one{
+		display: flex;
+		overflow: hidden;
+		.fl-post-give{
+			padding: 0!important;
+			position: relative;
+			height: 100%;
+			display: block !important;
+			max-height: 400px;
+			overflow: hidden;
+
+			.fl-give-content{
+				position: absolute;
+				padding: 60px 70px;
+				bottom: 0;
+				z-index: 1;
+				width: 100%;
+				.fl-entry-title{
+					font-size: 24px;
+					transition: all 300ms;
+					//transform: translateY(130px);
+				}
+				.fl-give-excerpt{
+					opacity: 0;
+					transition: all 300ms;
+					transform: translateY(100px);
+					height: 0px;
+					button{
+						padding: 20px 30px;
+						transition: all .3s;
+						display: inline-block;
+						border: 0px;
+						border-radius: unset;
+						opacity: 1;
+						&:hover{
+							opacity: .8;
+							transition: all .3s;
+						}
+					}
+					p{
+						margin-bottom: 35px;
+						overflow: hidden;
+						position: relative;
+						height: 50px;
+					}
+				}
+				.fl-give-meta{
+					border-bottom-left-radius: 25px;
+					border-top-right-radius: 25px;
+					background-color: rgba(178, 58, 0, 0.85);
+					display: inline-block;
+					transition: all 300ms;
+					margin-bottom: 0px;
+					
+					.fl-total-goal{
+						font-weight: 600;
+						padding: 0px 15px;
+						span{
+							font-size: 15px;
+						}
+						span.fl-goal-income-wrapper{
+							padding: 0 15px;
+						}
+						span.fl-goal-text-wrapper{
+							padding-left: 11px;
+							padding-right: 15px;
+						}
+					}
+				}
+
+			}
+			.fl-give-post-image{
+				position: relative;
+				&:after{
+					background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,1) 100%);
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					content: '';
+					opacity: .8;
+				}
+				.fl-donate-hover-back{
+					position: absolute;
+					height: 0;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					z-index: 1;
+					opacity: 0;
+					transition: all 300ms;
+				}
+			}
+			&:hover{
+				.fl-give-content{
+					.fl-entry-title{
+						transform: translateY(0px);
+					}
+					.fl-give-meta{
+						margin-bottom: 25px;
+						transform: translateY(0px);
+					}
+					.fl-give-excerpt{
+						opacity: 1;
+						transform: translateY(0px);
+						height: 100%;
+					}
+				}
+				.fl-give-post-image{
+					.fl-donate-hover-back{
+						height: 100%;
+						opacity: 0.8;
+					}
+				}
+			}
+		}
+		.fl-give-post-image{
+			img{
+				width: 100%;
+			}
+		}
+	}
+
+
+//Donates style two
+//Vars
+$circle-width: 0.055em;
+.pie {
+	position: absolute;
+	border: $circle-width solid #8a9536;
+	width: 1 - (2 * $circle-width);
+	height: 1 - (2 * $circle-width);
+	clip: rect(0em, 0.5em, 1em, 0em);
+	border-radius: 50%;
+}
+.rect-auto{
+	clip: rect(auto, auto, auto, auto);
+}
+.pie-fill {
+	transform: rotate(180deg);
+}
+.fl-donate-style-two{
+	direction: ltr!important;
+	.fl-post-give{
+		width: 100%;
+		height: 421px;
+		background-color: #ffffff;
+		margin: 0 10px;
+		.fl-give-content{
+			position: relative;
+			.fl-give-raised-goal{
+				position: absolute;
+				padding: 0 50px;
+				width: 100%;
+				.fl-goal-income-wrapper{
+					position: absolute;
+					left: 45px;
+					text-align: center;
+					top: 35px;
+					span{
+						font-size: 18px;
+						font-weight: 600;
+						display: block;
+					}
+				}
+				.fl-goal-text-wrapper{
+					position: absolute;
+					right: 45px;
+					text-align: center;
+					top: 35px;
+					span{
+						font-size: 18px;
+						font-weight: 600;
+						display: block;
+					}
+				}
+			}
+			.fl-donates-ornaments{
+				position: relative;
+				top: 50px;
+				&:before{
+					content: '';
+					position: absolute;
+					width: 75px;
+					height: 15px;
+					left: 60px;
+					top: 0;
+					padding: 0;
+					margin-left: auto;
+					margin-right: auto;
+					z-index: 333;
+					background: url(../css/images/ornament_after_post.png) no-repeat;
+					background-size: 90px 15px;
+					bottom: 0;
+				}
+				&:after{
+					content: '';
+					position: absolute;
+					width: 75px;
+					height: 15px;
+					top: 0;
+					right: 60px;
+					padding: 0;
+					margin-left: auto;
+					margin-right: auto;
+					z-index: 333;
+					background: url(../css/images/ornament_after_post.png) no-repeat;
+					background-size: 90px 15px;
+					bottom: 0;
+				}
+			}
+			.fl-post-give-content{
+				text-align: left;
+				margin: auto;
+				.fl-entry-title{
+					padding: 50px 50px 0 50px;
+				}
+				.fl-give-meta{
+					.fl-total-goal{
+						font-weight: 600;
+						padding-bottom: 15px;
+						span{
+							font-size: 15px;
+						}
+						span.fl-goal-income-wrapper{
+							padding: 0 15px;
+						}
+						span.fl-goal-text-wrapper{
+							padding-left: 11px;
+							padding-right: 15px;
+						}
+					}
+				}
+				.fl-give-excerpt{
+					padding-bottom: 50px;
+					border-bottom: 1px solid #eee;
+					p{
+						position: relative;
+						margin-bottom: 1.25rem;
+						padding: 0 50px;
+						overflow: hidden;
+						height: 70px;
+					}
+					button{
+						padding: 0 50px;
+						background: transparent;
+						transition: all .3s;
+						display: inline-block;
+						border: 0px;
+						border-radius: unset;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+		.fl-give-meta{
+			width: 100%;
+			padding: 50px;
+			display: inline-block;
+			.fl-total-goal{
+				.fl-goal-income-wrapper{
+					text-align: left;
+					float: left;
+					.fl-income{
+						font-weight: 600;
+					}
+				}
+				.fl-goal-text-wrapper{
+					text-align: right;
+					float: right;
+					.fl-goal-text{
+						font-weight: 600;
+					}
+				}
+			}
+			.fl-percent-100 {
+				*, *:before, *:after {
+					box-sizing: content-box;
+				}
+				position: relative;
+				height: 15px;
+				border-radius: 50%;
+				margin: auto;
+				margin-bottom: 30px;
+				// 	// center circle to its parent
+				// 	&.center{
+				// 		float: none;
+				// 		margin: 0 auto;
+				// 	}
+
+				// 	&.small{
+				// 		font-size: 80px;
+				// 	}
+
+				// centered value inside circle
+				> span {
+					display: block;
+					white-space: nowrap;
+					transition-property: all;
+					transition-duration: 0.2s;
+					transition-timing-function: ease-out;
+				}
+
+				// background inside the circle
+				&:after{
+					position: absolute;
+					top: 0;
+					left: 0;
+					display: block;
+					content: " ";
+					width: 75%;
+					height: 15px;
+					transition-property: all;
+					transition-duration: 0.2s;
+					transition-timing-function: ease-out;
+					border-radius: 25px;
+					border: 1px #eee solid;
+				}
+
+				// the slice (mask)
+				.slice {
+					position: absolute;
+					width: 1em;
+					height: 1em;
+					clip: rect(0em, 1em, 1em, 0.5em);
+				}
+
+				// circle to show the status
+				.bar {
+					@extend .pie;
+				}
+
+
+				// loop to create all needed elements automatically
+				@for $j from 51 through 100 {
+
+					&.fl-p#{$j} .slice {
+						@extend .rect-auto;
+					}
+
+					&.fl-p#{$j} .bar:after{
+						@extend .pie-fill;
+					}
+
+					&.fl-p#{$j} .fill{
+						@extend .pie;
+						@extend .pie-fill;
+					}
+
+				}
+
+				// loop to rotate all 100 circles
+				@for $j from 1 through 100 {
+					&.fl-p#{$j} {
+						&::before{
+							width: ((360/185*$j) + px);
+							content: '';
+							position: absolute;
+							left: 0;
+							height: 15px;
+							background: #8a9535;
+							z-index: 1;
+							border-radius: 25px;
+						}
+					}
+				}
+				.give-percentage{
+					font-size: 24px;
+					position: absolute;
+					right: 0;
+					top: -6px;
+					margin: auto;
+				}
+			}
+		}
+	}
+	.slick-dots{
+		display: block;
+		margin: auto;
+		width: 100%;
+		text-align: center;
+		padding-bottom: 45px;
+		li{
+			padding: 0;
+			list-style: none;
+			display: inline-block;
+			&:before{
+				content: unset;
+			}
+			button{
+				font-size: 0;
+				padding-left: 5px;
+				padding-right: 20px;
+				&:before{
+					font-family: 'slick';
+					font-size: 74px;
+					line-height: 20px;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 9px;
+					height: 9px;
+					content: '.';
+					text-align: center;
+					opacity: .25;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+				}
+			}
+		}
+		.slick-active{
+			button{
+				&:before{
+					opacity: .7;
+				}
+			}
+		}
+	}
+}
+
+.fl-donate-style-three{
+	.fl-post-give{
+		padding: 40px;
+		background-color: #ffffff;
+		-webkit-box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+		box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+		direction: ltr!important;
+		margin: 15px;
+		.fl-give-content{
+			position: relative;
+			.fl-give-raised-goal{
+				position: absolute;
+				padding: 0 50px;
+				width: 100%;
+				.fl-goal-income-wrapper{
+					position: absolute;
+					left: 45px;
+					text-align: center;
+					top: 35px;
+					span{
+						font-size: 18px;
+						font-weight: 600;
+						display: block;
+					}
+				}
+				.fl-goal-text-wrapper{
+					position: absolute;
+					right: 45px;
+					text-align: center;
+					top: 35px;
+					span{
+						font-size: 18px;
+						font-weight: 600;
+						display: block;
+					}
+				}
+			}
+			.fl-donates-ornaments{
+				position: relative;
+				top: 50px;
+				&:before{
+					content: '';
+					position: absolute;
+					width: 75px;
+					height: 15px;
+					left: 60px;
+					top: 0;
+					padding: 0;
+					margin-left: auto;
+					margin-right: auto;
+					z-index: 333;
+					background: url(../css/images/ornament_after_post.png) no-repeat;
+					background-size: 90px 15px;
+					bottom: 0;
+				}
+				&:after{
+					content: '';
+					position: absolute;
+					width: 75px;
+					height: 15px;
+					top: 0;
+					right: 60px;
+					padding: 0;
+					margin-left: auto;
+					margin-right: auto;
+					z-index: 333;
+					background: url(../css/images/ornament_after_post.png) no-repeat;
+					background-size: 90px 15px;
+					bottom: 0;
+				}
+			}
+			.fl-percent-100 {
+				*, *:before, *:after {
+					box-sizing: content-box;
+				}
+				position: relative;
+				font-size: 100px;
+				width: 1em;
+				height: 1em;
+				border-radius: 50%;
+				margin: auto;
+
+				// 	// center circle to its parent
+				// 	&.center{
+				// 		float: none;
+				// 		margin: 0 auto;
+				// 	}
+
+				// 	&.small{
+				// 		font-size: 80px;
+				// 	}
+
+				// centered value inside circle
+				> span {
+					position: absolute;
+					width: 100%;
+					z-index: 1;
+					left: 0;
+					top: 0;
+					width: 5em;
+					line-height: 5em;
+					font-size: 0.2em;
+					display: block;
+					text-align: center;
+					white-space: nowrap;
+					transition-property: all;
+					transition-duration: 0.2s;
+					transition-timing-function: ease-out;
+				}
+
+				// background inside the circle
+				&:after{
+					position: absolute;
+					top: .050 + $circle-width;
+					left: .050 + $circle-width;
+					display: block;
+					content: " ";
+					border-radius: 50%;
+					width: .9 - (2 * $circle-width);
+					height: .9 - (2 * $circle-width);
+					transition-property: all;
+					transition-duration: 0.2s;
+					transition-timing-function: ease-out;
+					border: 3px #8a9536 solid;
+				}
+
+				// the slice (mask)
+				.slice {
+					position: absolute;
+					width: 1em;
+					height: 1em;
+					clip: rect(0em, 1em, 1em, 0.5em);
+				}
+
+				// circle to show the status
+				.bar {
+					@extend .pie;
+				}
+
+
+				// loop to create all needed elements automatically
+				@for $j from 51 through 100 {
+
+					&.fl-p#{$j} .slice {
+						@extend .rect-auto;
+					}
+
+					&.fl-p#{$j} .bar:after{
+						@extend .pie-fill;
+					}
+
+					&.fl-p#{$j} .fill{
+						@extend .pie;
+						@extend .pie-fill;
+					}
+
+				}
+
+				// loop to rotate all 100 circles
+				@for $j from 1 through 100 {
+					&.fl-p#{$j} .bar {
+						transform: rotate((360/100*$j) + deg);
+					}
+				}
+				.give-percentage{
+					font-size: 20px;
+				}
+			}
+			.fl-post-give-content{
+				text-align: center;
+				margin: auto;
+				.fl-entry-title{
+					padding-top: 20px;
+					font-size: 22px;
+					&:hover{
+						opacity: .8;
+					}
+				}
+				.fl-give-meta{
+					.fl-total-goal{
+						font-weight: 600;
+						padding-bottom: 15px;
+						span{
+							font-size: 15px;
+						}
+						span.fl-goal-income-wrapper{
+							padding: 0 15px;
+						}
+						span.fl-goal-text-wrapper{
+							padding-left: 11px;
+							padding-right: 15px;
+						}
+					}
+				}
+				.fl-give-excerpt{
+					padding: 0 5px;
+					p{
+						overflow: hidden;
+						position: relative;
+						margin-bottom: 20px;
+					}
+					button{
+						text-align: center;
+						transition: all .3s;
+						font-size: 18px;
+						background: transparent;
+						border: none;
+						&:hover{
+							opacity: .5;
+							transition: opacity .3s ease-in-out;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+//Donates style two
+//Vars
+$circle-width: 0.055em;
+.pie {
+	position: absolute;
+	border: $circle-width solid #8a9536;
+	width: 1 - (2 * $circle-width);
+	height: 1 - (2 * $circle-width);
+	clip: rect(0em, 0.5em, 1em, 0em);
+	border-radius: 50%;
+	transform: rotate(0deg);
+}
+.rect-auto{
+	clip: rect(auto, auto, auto, auto);
+}
+.pie-fill {
+	transform: rotate(180deg);
+}
+.fl-donate-style-four{
+	background-color: #ffffff;
+	-webkit-box-shadow: -2px 2px 44px -19px rgba(0,0,0,0.1);
+	-moz-box-shadow: -2px 2px 44px -19px rgba(0,0,0,0.1);
+	box-shadow: -2px 2px 44px -19px rgba(0,0,0,0.1);
+	direction: ltr!important;
+	.fl-post-give{
+		width: 100%;
+		height: 100%;
+		padding: 50px 50px 0 50px;
+
+		.fl-give-content{
+			position: relative;
+			.fl-give-raised-goal{
+				position: absolute;
+				padding: 0 50px;
+				width: 100%;
+				.fl-goal-income-wrapper{
+					position: absolute;
+					left: 45px;
+					text-align: center;
+					top: 35px;
+					span{
+						font-size: 18px;
+						font-weight: 600;
+						display: block;
+					}
+				}
+				.fl-goal-text-wrapper{
+					position: absolute;
+					right: 45px;
+					text-align: center;
+					top: 35px;
+					span{
+						font-size: 18px;
+						font-weight: 600;
+						display: block;
+					}
+				}
+			}
+			.fl-donates-ornaments{
+				position: relative;
+				top: 50px;
+				&:before{
+					content: '';
+					position: absolute;
+					width: 75px;
+					height: 15px;
+					left: 60px;
+					top: 0;
+					padding: 0;
+					margin-left: auto;
+					margin-right: auto;
+					z-index: 333;
+					background: url(../css/images/ornament_after_post.png) no-repeat;
+					background-size: 90px 15px;
+					bottom: 0;
+				}
+				&:after{
+					content: '';
+					position: absolute;
+					width: 75px;
+					height: 15px;
+					top: 0;
+					right: 60px;
+					padding: 0;
+					margin-left: auto;
+					margin-right: auto;
+					z-index: 333;
+					background: url(../css/images/ornament_after_post.png) no-repeat;
+					background-size: 90px 15px;
+					bottom: 0;
+				}
+			}
+			.fl-percent-100 {
+				*, *:before, *:after {
+					box-sizing: content-box;
+				}
+				position: relative;
+				font-size: 120px;
+				width: 1em;
+				height: 1em;
+				border-radius: 50%;
+				margin: auto;
+
+				// 	// center circle to its parent
+				// 	&.center{
+				// 		float: none;
+				// 		margin: 0 auto;
+				// 	}
+
+				// 	&.small{
+				// 		font-size: 80px;
+				// 	}
+
+				// centered value inside circle
+				> span {
+					position: absolute;
+					width: 100%;
+					z-index: 1;
+					left: 0;
+					top: 0;
+					width: 5em;
+					line-height: 5em;
+					font-size: 0.2em;
+					display: block;
+					text-align: center;
+					white-space: nowrap;
+					transition-property: all;
+					transition-duration: 0.2s;
+					transition-timing-function: ease-out;
+				}
+
+				// background inside the circle
+				&:after{
+					position: absolute;
+					top: .050 + $circle-width;
+					left: .050 + $circle-width;
+					display: block;
+					content: " ";
+					border-radius: 50%;
+					width: .9 - (2 * $circle-width);
+					height: .9 - (2 * $circle-width);
+					transition-property: all;
+					transition-duration: 0.2s;
+					transition-timing-function: ease-out;
+					border: 3px #8a9536 solid;
+				}
+
+				// the slice (mask)
+				.slice {
+					position: absolute;
+					width: 1em;
+					height: 1em;
+					clip: rect(0em, 1em, 1em, 0.5em);
+				}
+
+				// circle to show the status
+				.bar {
+					@extend .pie;
+				}
+
+
+				// loop to create all needed elements automatically
+				@for $j from 51 through 100 {
+
+					&.fl-p#{$j} .slice {
+						@extend .rect-auto;
+					}
+
+					&.fl-p#{$j} .bar:after{
+						@extend .pie-fill;
+					}
+
+					&.fl-p#{$j} .fill{
+						@extend .pie;
+						@extend .pie-fill;
+					}
+
+				}
+
+				// loop to rotate all 100 circles
+				@for $j from 1 through 100 {
+					&.fl-p#{$j} .bar {
+						transform: rotate((360/100*$j) + deg);
+					}
+				}
+				.give-percentage{
+					font-size: 24px;
+				}
+			}
+			.fl-post-give-content{
+				text-align: center;
+				margin: auto;
+				.fl-entry-title{
+					padding-top: 20px;
+				}
+				.fl-give-meta{
+					.fl-total-goal{
+						font-weight: 600;
+						padding-bottom: 15px;
+						span{
+							font-size: 15px;
+						}
+						span.fl-goal-income-wrapper{
+							padding: 0 15px;
+						}
+						span.fl-goal-text-wrapper{
+							padding-left: 11px;
+							padding-right: 15px;
+						}
+					}
+				}
+				.fl-give-excerpt{
+					padding: 0 50px;
+
+					p{
+						overflow: hidden;
+						position: relative;
+						margin-bottom: 45px;
+					}
+					button{
+						padding: 20px 30px;
+						transition: all .3s;
+						display: inline-block;
+						border: 0px;
+						border-radius: unset;
+					}
+				}
+			}
+		}
+	}
+	.slick-dots{
+		display: block;
+		margin: auto;
+		width: 100%;
+		text-align: center;
+		padding-bottom: 45px;
+		li{
+			padding: 0;
+			list-style: none;
+			display: inline-block;
+			&:before{
+				content: unset;
+			}
+			button{
+				font-size: 0;
+				padding-left: 5px;
+				padding-right: 20px;
+				&:before{
+					font-family: 'slick';
+					font-size: 74px;
+					line-height: 20px;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 9px;
+					height: 9px;
+					content: '.';
+					text-align: center;
+					opacity: .25;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+				}
+			}
+		}
+		.slick-active{
+			button{
+				&:before{
+					opacity: .7;
+				}
+			}
+		}
+	}
+}
+
+.fl-donate-style-five{
+	.fl-post-give{
+		width: 30%;
+		margin: 15px;
+		background: #fff;
+		-webkit-box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, .4);
+		-moz-box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, .4);
+		box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, .4);
+		.fl-give-meta{
+			.fl-percent-100 {
+				*, *:before, *:after {
+					box-sizing: content-box;
+				}
+				position: relative;
+				height: 15px;
+				border-radius: 50%;
+				margin: auto;
+				margin-bottom: 30px;
+				// 	// center circle to its parent
+				// 	&.center{
+				// 		float: none;
+				// 		margin: 0 auto;
+				// 	}
+
+				// 	&.small{
+				// 		font-size: 80px;
+				// 	}
+
+				// centered value inside circle
+				> span {
+					display: block;
+					white-space: nowrap;
+					transition-property: all;
+					transition-duration: 0.2s;
+					transition-timing-function: ease-out;
+				}
+
+				// background inside the circle
+				&:after{
+					position: absolute;
+					top: 0;
+					left: 0;
+					display: block;
+					content: " ";
+					width: 75%;
+					height: 15px;
+					transition-property: all;
+					transition-duration: 0.2s;
+					transition-timing-function: ease-out;
+					border-radius: 25px;
+					border: 1px #eee solid;
+				}
+
+				// the slice (mask)
+				.slice {
+					position: absolute;
+					width: 1em;
+					height: 1em;
+					clip: rect(0em, 1em, 1em, 0.5em);
+				}
+
+				// circle to show the status
+				.bar {
+					@extend .pie;
+				}
+
+
+				// loop to create all needed elements automatically
+				@for $j from 51 through 100 {
+
+					&.fl-p#{$j} .slice {
+						@extend .rect-auto;
+					}
+
+					&.fl-p#{$j} .bar:after{
+						@extend .pie-fill;
+					}
+
+					&.fl-p#{$j} .fill{
+						@extend .pie;
+						@extend .pie-fill;
+					}
+
+				}
+
+				// loop to rotate all 100 circles
+				@for $j from 1 through 100 {
+					&.fl-p#{$j} {
+						&::before{
+							width: ((360/185*$j) + px);
+							content: '';
+							position: absolute;
+							left: 0;
+							height: 15px;
+							background: #8a9535;
+							z-index: 1;
+							border-radius: 25px;
+						}
+					}
+				}
+				.give-percentage{
+					font-size: 24px;
+					position: absolute;
+					right: 0;
+					top: -6px;
+					margin: auto;
+				}
+			}
+
+			.fl-total-goal{
+				font-weight: 600;
+				padding-bottom: 15px;
+				span{
+					font-size: 15px;
+				}
+				span.fl-goal-income-wrapper{
+					padding: 0 15px;
+				}
+				span.fl-goal-text-wrapper{
+					padding-left: 11px;
+					padding-right: 15px;
+				}
+			}
+			.give-form-wrap{
+				button.give-btn-modal{
+					background-color: transparent;
+					border: 1px solid #8a9536 !important;
+					color: inherit;
+					margin-top: 30px;
+					color: #b23a00 !important;
+					font-weight: 600;
+					padding: 14px 19px;
+				}
+			}
+		}
+	}
+
+}
+
+
+
+
+//Slick Slider
+.slick-slider {
+	position: relative;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+}
+.slick-list.draggable {
+	cursor: all-scroll;
+}
+.slick-slider .slick-list, .slick-slider .slick-track {
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.slick-list {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.slick-list, .slick-slider, .slick-track {
+	position: relative;
+}
+.slick-slider .slick-list, .slick-slider .slick-track {
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.slick-track {
+	top: 0;
+	left: 0;
+}
+.slick-slide {
+	float: left;
+	height: 100%;
+	min-height: 1px;
+}
+
+
+.give-input{
+	width: 100%!important;
+	height: 100%!important;
+	margin-bottom: 0!important;
+	padding: 20px 62px 20px 20px!important;
+	border: 2px solid #eee!important;
+	-webkit-border-radius: 5px!important;
+	border-radius: 5px!important;
+	display: block;
+	background-color: #fff!important;
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s!important;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s!important;
+	transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s!important;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s!important;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s!important;
+	font-size: 15px!important;
+	letter-spacing: .02em!important;
+}
+#give-anonymous-donation-wrap{
+	.give-label{
+		display: flex;
+		input[type=checkbox]{
+			height: 15px!important;
+			width: 15px!important;
+			position: relative;
+			top: 5px;
+		}
+	}
+}
+#give-final-total-wrap{
+	.give-donation-total-label{
+		padding: 10px 20px!important;
+	}
+}
+.give-text-input, .give-currency-symbol, .give-donation-total-label, .give-final-total-amount, .give-donation-level-btn{
+	margin-bottom: 0!important;
+	border: 2px solid #eee!important;
+	-webkit-border-radius: 5px!important;
+	border-radius: 5px!important;
+	display: block;
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s!important;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s!important;
+	transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s!important;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s!important;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s!important;
+	font-size: 15px!important;
+	letter-spacing: .02em!important;
+	line-height: 31px!important;
+}
+.give-submit{
+	padding: 20px 40px!important;
+	border-radius: 2%!important;
+	transition: all 0.2s ease-in;
+	display: inline-block;
+}

@@ -1,0 +1,13 @@
+.fl-separator{
+  .fl-decor-separator{
+	display: inline-block;
+	width: 4px;
+	height: 30px;
+	background-color: #ddd;
+  }
+	&.fl-small-size{
+	  .fl-decor-separator{
+		height: 20px;
+	  }
+	}
+}

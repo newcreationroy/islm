@@ -1,0 +1,49 @@
+.fl-award-block{
+	.fl-awards-block-wrapper{
+	  .fl-awards-block-child{
+		cursor: pointer;
+		display: inline-block;
+		width: 20%;
+		margin-right: -3px;
+		margin-bottom: 12px;
+		transition: opacity .3s;
+		text-align: center;
+		vertical-align: top;
+		opacity: .4;
+		color: #666;
+		background-image: url(sass/vc_page_builder_components/img/badge.png);
+		background-repeat: no-repeat;
+		background-position: 50% 0;
+		.fl-awards-number{
+		  padding-top: 7px;
+		  font: 700 30px/1 'Source Sans Pro';
+		  text-transform: uppercase;
+		}
+		.fl-awards-info{
+		  width: 70px;
+		  padding-top: 4px;
+		  margin: 0 auto;
+		  font-size: 10px;
+		  line-height: 1;
+		}
+		.fl-awards-title{
+		  line-height: 1.5;
+		  font-size: 12px;
+		  margin-top: 30px;
+		}
+		&:hover{
+		  transition: opacity .3s;
+		  opacity: 1;
+		}
+	  }
+	}
+}
+
+
+@media (max-width: 767px){
+  .fl-awards-block-child{
+	width: 100%!important;
+	display: block!important;
+	margin-bottom: 40px!important;
+  }
+}

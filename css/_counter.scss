@@ -1,0 +1,25 @@
+.fl-counter-wrapper{
+	.counter-prefix{
+		margin-right: 5px;
+	}
+	.counter-suffix{
+		margin-left: 5px;
+	}
+
+
+   //Style Five
+	text-align: left!important;
+	.fl-counter-wrapper-inner{
+		.fl-counter{
+			text-align: center;
+			font-size: 48px;
+			margin-bottom: 4px;
+			line-height: 1;
+		}
+		.fl-counter-list__content{
+			text-align: center;
+			color: #333333;
+			opacity: 0.7;
+		}
+	}
+}

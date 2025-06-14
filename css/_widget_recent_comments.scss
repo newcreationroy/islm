@@ -1,0 +1,31 @@
+.widget_recent_comments {
+  .recentcomments {
+	  padding: 15px 0;
+	  border-bottom: 1px #eee solid;
+	  color: #908c8a;
+	  .comment-author-link{
+		  a{
+			  text-transform: uppercase;
+		  }
+	  }
+	&:first-child {
+	  padding-top: 0;
+	}
+	  a{
+		  line-height: inherit;
+		  font-weight: normal;
+		  color: #8a9535!important;
+	  }
+  }
+	.widget_recent_comments .comment-author-link{
+		font: inherit;
+	}
+	ul{
+		margin-left: 0px;
+		li{
+			&:before{
+				content: unset;
+			}
+		}
+	}
+}

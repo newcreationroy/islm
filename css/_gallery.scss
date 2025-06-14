@@ -1,0 +1,56 @@
+.fl-gallery-wrapper{
+  .fl-gallery{
+    .gallery-item{
+      overflow: hidden;
+      margin: 15px;
+      position: relative;
+      img{
+        transition: .3s ease;
+      }
+      a.image-gallery-link{
+        -webkit-transition: .3s ease;
+        -o-transition: .3s ease;
+        transition: .3s ease;
+        opacity: 0;
+        visibility: hidden;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+      &:hover{
+        a.image-gallery-link{
+          transition: .3s ease;
+          opacity: 1;
+          visibility: visible;
+        }
+        img{
+          opacity: 0.85;
+          transition: .3s ease;
+        }
+      }
+
+
+    }
+    .fl-gal-row-one, .fl-gal-row-three{
+      display: grid
+    }
+    .fl-gal-row-four{
+      display: flex;
+    }
+  }
+}

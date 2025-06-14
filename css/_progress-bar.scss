@@ -1,0 +1,74 @@
+.fl-progress-bar{
+ // Style One
+ &.fl-progress-bar-style--1{
+  position: relative;
+  padding-right: 40px;
+  .fl-progress-title{
+   margin-bottom: 13px;
+   font-size: 12px;
+   text-transform: uppercase;
+   color: #222
+  }
+  .fl-progress-wrapper{
+   .fl-tracking-progress-bar{
+    height: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #eee;
+    .fl-tracking-progress-bar__item{
+     float: left;
+     width: 0;
+     height: 100%;
+    }
+   }
+   .fl-progress-bar__number{
+    position: absolute;
+    top: 0;
+    right: 40px;
+   }
+  }
+ }
+ // Style Two
+ &.fl-progress-bar-style--2{
+  position: relative;
+  padding-right: 40px;
+  .fl-progress-title{
+   line-height: 1;
+   margin-bottom: 4px;
+   font-size: 12px;
+   text-transform: uppercase;
+   color: #222
+  }
+  .fl-progress-wrapper{
+   .fl-tracking-progress-bar{
+    width: calc(100% - 65px);
+    display: inline-block;
+    height: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #eee;
+    .fl-tracking-progress-bar__item{
+     float: left;
+     width: 0;
+     height: 100%;
+    }
+   }
+   .fl-progress-bar__number{
+    color: #333333;
+    width: 65px;
+    text-align: right;
+    display: inline-block;
+    .fl-animated-number{
+     font-size: 12px;
+    }
+   }
+  }
+ }
+}
+
+
+@media screen and (max-width: 1024px){
+ .fl-progress-bar.fl-progress-bar-style--2{
+  padding-right: 0;
+ }
+}

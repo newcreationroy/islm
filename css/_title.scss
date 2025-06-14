@@ -1,0 +1,52 @@
+.fl-custom--title{
+
+}
+.fl-title-slogan-auth{
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 14px!important;
+	text-align: center;
+}
+.fl-title-slogan{
+	position: relative;
+	padding: 25px 0;
+	&:before{
+		content: '';
+		width: 100%;
+		position: absolute;
+		border-bottom: 3px solid transparent;
+		-webkit-border-image: url(../images/border_widget.png);
+		-o-border-image: url(../images/border_widget.png);
+		border-image-slice: 2;
+		border-image-outset: 0;
+		background-color: transparent;
+		top: 0;
+		left: 0;
+	}
+	&:after{
+		content: '';
+		width: 100%;
+		position: absolute;
+		border-bottom: 3px solid transparent;
+		-webkit-border-image: url(../images/border_widget.png);
+		-o-border-image: url(../images/border_widget.png);
+		border-image-slice: 2;
+		border-image-outset: 0;
+		background-color: transparent;
+		bottom: 0;
+		left: 0;
+	}
+	span.fl-slogan-text{
+		display: inline-block;
+		position: relative;
+	}
+	span.fl-slogan-author{
+		display: inline-flex;
+		font-style: normal;
+		font-weight: 400;
+		margin-left: 10px;
+	}
+}
+.fl-title-vc{
+	line-height: 48px!important;
+}

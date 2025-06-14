@@ -1,0 +1,31 @@
+.fl_slider_box {
+	padding: 0 20px;
+	overflow: hidden;
+	direction: ltr!important;
+	.fl-slider-for{
+		position: relative;
+		padding-bottom: 20px;
+		.slick-track{
+			display: flex;
+			text-align: center;
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.fl-slider-nav{
+		overflow: hidden;
+		position: relative;
+		right: 0;
+		.slick-track{
+			display: flex;
+			.slick-slide{
+				width: 270px;
+			}
+		}
+		img{
+			padding-right: 20px;
+			width: 100%;
+		}
+	}
+}

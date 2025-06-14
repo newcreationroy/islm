@@ -1,0 +1,22 @@
+.fl-hijri-date{
+	width: 655px;
+	display: flex;
+	position: relative;
+	transition: all 300ms;
+	left: 0;
+	right: 0;
+	text-align: center;
+	padding: 10px 0;
+	justify-content: center;
+	line-height: 12px;
+	img:last-child{
+		transform: scale(-1, 1);
+	}
+	.fl-hijri-contain{
+		display: block;
+	}
+	span{
+		display: block;
+		padding: 6px 25px;
+	}
+}

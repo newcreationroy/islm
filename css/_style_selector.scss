@@ -1,0 +1,109 @@
+.style-selector{
+    display: inline-block;
+    padding: 35px 25px;
+	background: #fff;
+	position: fixed;
+	top: 150px;
+	left: 0;
+	max-width: 250px;
+	transition: .3s ease-in-out;
+	z-index: 900;
+	box-shadow: 0 10px 60px rgba(0,0,0,.15);
+	&.closed{
+		transition: .3s ease-in-out;
+		transform: translateX(-100%);
+	}
+	&.open{
+		transition: .3s ease-in-out;
+		transform: translateX(0);
+	}
+	.icon-btn-selector{
+		cursor: pointer;
+		width: 35px;
+		height: 35px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #fff;
+		position: absolute;
+		right: -35px;
+		top: 0;
+		i{
+			font-size: 17px;
+		}
+	}
+	h5{
+		margin-bottom: 25px;
+		text-align: center;
+		font-size: 17px;
+	}
+	p{
+		margin-bottom: 0;
+		font-size: 12px;
+	}
+	ul{
+		text-align: center;
+		margin-bottom: 20px;
+		li{
+			margin-top: 15px;
+			&:first-child{
+				margin-top: 0;
+			}
+			div{ 
+				padding: 10px 38px;
+				transition: background-color .3s,color .1s;
+				position: relative;
+				text-transform: uppercase;
+				margin-bottom: 0;
+				font-size: 11px;
+				letter-spacing: .02em;
+				display: inline-block;
+				text-align: center;
+				vertical-align: middle;
+				overflow: hidden;
+				cursor: pointer;
+				white-space: nowrap;
+				font-family: Poppins, Helvetica, Arial, sans-serif;
+				font-weight: 500;
+				color: #fff!important;
+				&.default_style{
+					background-image: linear-gradient(to right, #368527 0%, #d2b829 100%);
+				}
+				&.style_color_two{
+					background-image: linear-gradient(to right, #1a59a7 0%, #29d2a0 100%);
+				}
+				&.style_color_three{
+					background-image: linear-gradient(to right,#1a59a7 0%,#d2a029 100%);
+				}
+				i.fl-icon-btn{
+					transition: all .3s;
+					display: inline-block;
+					border-width: 4px 6px;
+					border-style: solid;
+					border-color: transparent;
+					border-left-color: #fff!important;
+				}
+				&:after{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 110%;
+					height: 100%;
+					content: '';
+					transform: skewX(-50deg);
+					background: linear-gradient(to left,rgba(255,255,255,0),rgba(255,255,255,.8),rgba(255,255,255,0)) -2em 0 no-repeat;
+					background-size: 2em 100%;
+				}
+				&:hover{
+					&:after{
+						transition: .7s linear;
+						background-position: 150% 0;
+					}
+				}
+				&.active{
+
+				}
+			}
+		}
+	}
+}

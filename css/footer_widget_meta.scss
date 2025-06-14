@@ -1,0 +1,16 @@
+.widget_meta {
+  ul {
+	padding: 0;
+	li {
+	  padding-bottom: 13px;
+	  a {
+		  font-size: 11px;
+		  color: $color_text;
+	  }
+	  &:last-child {
+		padding-bottom: 0;
+	  }
+	}
+  }
+
+}

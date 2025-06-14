@@ -1,0 +1,243 @@
+.fl--blog-post-div{
+	.fl-post-top-content{
+		padding-bottom: 35px;
+
+		//Standart Post Format
+		.fl-post--holder{
+			position: relative;
+		}
+
+		//Gallery Post Format
+		.fl-post--gallery{
+			position: relative;
+			.fl-post--gallery-slider{
+				overflow: hidden;
+				position: relative;
+				ul.slick-dots{
+					display: block;
+					position: absolute;
+					bottom: 0;
+					width: 100%;
+					padding: 0;
+					margin: 0;
+					text-align: center;
+					li{
+						display: inline-block;
+						button{
+							display: block;
+							width: 9px;
+							height: 9px;
+							padding: 0 10px;
+							cursor: pointer;
+							color: transparent;
+							border: 0;
+							outline: none;
+							background: transparent;
+							position: relative;
+							&:before{
+								left:0;
+								position: absolute;
+								width: 9px;
+								height: 9px;
+								content: '';
+								text-align: center;
+								border-radius: 50%;
+								background-color: #ffffff;
+								opacity: 0.5;
+							}
+						}
+					}
+					li.slick-active{
+						button{
+							&:before{
+								opacity: 1!important;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		//Image Post Format
+		.fl-post--image-contain{
+			position: relative;
+
+		}
+
+		//Quote Post Format
+		.fl-post--quote-contain{
+			.fl-post--quote{
+				position: relative;
+				width: 100%;
+				min-height: 200px;
+
+
+				span.fl-post--quote-text{
+					position: relative;
+					font-size: 40px;
+					line-height: 42px;
+					a{
+						span{
+							padding: 0 50px;
+							text-align: center;
+							display: block;
+						}
+					}
+
+					&:before{
+						font: normal normal normal 14px/1 FontAwesome;
+						content: "\f10d";
+						font-size: 48px;
+						display: block;
+						text-align: center;
+						padding-top: 50px;
+						padding-bottom: 30px;
+					}
+				}
+
+
+				span.fl-post--quote-text-padding{
+					span{
+						padding: 0 50px 50px 50px;
+					}
+				}
+				span.fl-post--quote-author{
+					display: block;
+					position: relative;
+					text-align: center;
+					font-size: 16px;
+					text-transform: uppercase;
+					padding: 10px 50px 50px 50px;
+				}
+			}
+		}
+
+		//Video Post Format
+		.fl-post--video-contain{
+			position: relative;
+			.fl-post-category-standard{
+				bottom: 65px;
+			}
+		}
+
+		.fl-post-category-standard{
+			display: inline-block;
+			line-height: 1;
+			position: absolute;
+			bottom: 45px;
+			left: 35px;
+			color: #fff;
+			font-size: 12px;
+			z-index: 2;
+			a{
+				padding: 12px;
+				color: inherit;
+				border-radius: 3%;
+				margin-right: 5px;
+				transition: all .3s;
+			}
+		}
+	}
+	.fl-post-bottom-content{
+		text-align: center;
+		padding-bottom: 10px;
+		.fl-post-info{
+			font-size: 13px;
+			padding-bottom: 23px;
+			.fl-date-info{
+				padding-right: 20px;
+			}
+			i{
+				padding-right: 4px;
+			}
+		}
+		.fl-post-content--info{
+			.fl-post--title{
+				font-size: 32px;
+				margin-bottom: 20px;
+
+				a{
+					color: inherit;
+					line-height: 34px;
+				}
+			}
+			.fl-post-text--content{
+				padding-top: 20px;
+				position: relative;
+				padding-bottom: 50px;
+
+				&:before{
+					content: '';
+					position: absolute;
+					width: 120px;
+					height: 20px;
+					left: 0;
+					right: 0;
+					padding: 0;
+					margin-left: auto;
+					margin-right: auto;
+					z-index: 333;
+					background: url(../css/images/ornament_after_post.png) no-repeat;
+					bottom: 0;
+				}
+			}
+			a.fl--readmore-link{
+				font-size: 18px!important;
+				color: #333333;
+				position: relative;
+				top: 15px;
+				transition: all .3s;
+			}
+		}
+	}
+}
+
+.fl--blog-post-div-two{
+	.fl-post--item{
+		&:hover{
+			.fl-post-top-content{
+				.fl-post--holder{
+					img{
+						opacity: 0.85;
+						transition: .3s ease;
+					}
+				}
+			}
+		}
+
+		.fl-post-bottom-content{
+			background: #ffffff;
+			-webkit-box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+			-moz-box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+			box-shadow: -2px 2px 44px -19px rgba(0, 0, 0, 0.2);
+			transition: all .3s;
+			padding: 30px;
+			.fl-post-content--info{
+				a.fl--readmore-link{
+					&:hover{
+						text-decoration: underline!important;
+					}
+				}
+			}
+			.fl-post-info{
+				font-size: 13px;
+				padding-bottom: 15px;
+				.fl-date-info{
+					padding-right: 20px;
+				}
+				i{
+					padding-right: 4px;
+				}
+			}
+			.fl-post--title{
+				.fl--title-link{
+					font-size: 24px;
+					color: inherit;
+					padding-bottom: 20px;
+					display: block;
+					line-height: 32px;
+				}
+			}
+		}
+	}
+}

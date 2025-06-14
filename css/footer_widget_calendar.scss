@@ -1,0 +1,163 @@
+.widget_calendar {
+  .calendar_wrap {
+	padding: 0;
+	background: transparent;
+	#wp-calendar {
+	  width: 100%;
+	  position: relative;
+	  background: transparent;
+	  margin: 0;
+	  border: none;
+	  border-collapse: collapse;
+	  caption {
+		caption-side: top;
+		text-align: center;
+		height: 30px;
+		line-height: 30px;
+		font-size: 13px;
+		padding: 0;
+		margin-bottom: 15px;
+		font-weight: 700;
+		  color: $color_text;
+		opacity: .8;
+	  }
+	  thead th,
+	  tbody td {
+		width: 36px;
+		height: 36px;
+		line-height: 36px;
+		text-align: center;
+		padding: 0;
+		vertical-align: middle;
+	  }
+	  thead th{
+		font-size: 12px;
+	  }
+	  tbody td {
+		font-size: 11px;
+	  }
+	  thead {
+		background: transparent;
+		th {
+		  color: $color_text;
+		}
+	  }
+	  tbody {
+		tr {
+		  background: transparent;
+		  td {
+			position: relative;
+			a {
+				color: $color_text;
+			  display: block;
+			  position: relative;
+			  z-index: 2;
+			  &:before {
+				content: "";
+				position: absolute;
+				width: 36px;
+				height: 36px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background: transparent;
+				border-radius: 50%;
+				transition: background .3s ease;
+				z-index: -1;
+			  }
+			  &:hover {
+				color: #222!important;
+				&:before {
+				  background: $color_text;
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	  tfoot {
+		background: transparent;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 36px;
+		line-height: 36px;
+		#prev,
+		#next {
+		  position: absolute;
+		  width: 36px;
+		  top: 50%;
+		  transform: translate(0, -50%);
+		  padding: 0;
+		  a {
+			border-radius: 50%;
+			border: 1px solid $color_text;
+			background-color: transparent;
+			display: block;
+			position: relative;
+			margin: 0 auto;
+			color: transparent!important;
+			width: 28px;
+			height: 28px;
+			line-height: 24px;
+			text-align: center;
+			transition: all .3s ease-in;
+			&:before {
+			  font-family: FontAwesome;
+			  display: block;
+			  color: $color_text;
+			  transition: all .3s ease-in;
+			}
+			&:hover {
+			  transition: all .3s ease-in;
+			  background-color: $color_text;
+			  &:before{
+				transition: all .3s ease-in;
+				color: #222;
+			  }
+			}
+		  }
+		  &.pad {
+			text-align: center;
+			&:before {
+			  color: #f1f1f1;
+			  font-family: FontAwesome;
+			}
+		  }
+		}
+		#prev {
+		  left: 0;
+		  a {
+			&:before {
+			  content: "\f104";
+			}
+		  }
+		  &.pad {
+			&:before {
+			  content: "\f104";
+			}
+		  }
+		}
+		#next {
+		  right: 0;
+		  a {
+			&:before {
+			  content: "\f105";
+			}
+		  }
+		  &.pad {
+			&:before {
+			  content: "\f105";
+			}
+		  }
+		}
+	  }
+	}
+  }
+}
+
+
+
+
+
+

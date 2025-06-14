@@ -1,0 +1,159 @@
+/*-------------------------------------------------------------------
+
+==  Footer Widget
+
+-------------------------------------------------------------------*/
+$color_text:#ccc;
+.fl-footer-sidebar{
+
+	.widget+.widget{
+		margin-top: 25px;
+	}
+
+	.fl-widget--title{
+		margin-bottom: 35px;
+		font-size: 24px;
+	}
+	ul{
+		background: transparent!important;
+		list-style: none;
+		padding: 0;
+		margin-left: 0;
+		li{
+			font-weight: 400!important;
+			list-style: none;
+			padding: 0;
+			margin-left: 0;
+			line-height: 1;
+		}
+	}
+	.menu{
+		margin-bottom: 6px;
+		padding-right: 34px;
+		li{
+			margin-right: -2px;
+			a{
+				display: block;
+				margin-bottom: 5px;
+				padding-right: 10px;
+				font-size: 15px!important;
+				font-weight: 400!important;
+				-webkit-transition: all .3s;
+				transition: all .3s;
+				color: #cccccc!important;
+
+			}
+		}
+	}
+
+
+
+	// Contact Info Widget
+	.fl_contact_info_widget{
+		text-align: left;
+		.fl-contact-info-widget-phone{
+			margin-bottom: 2px;
+			font-size: 15px;
+			color: #cccccc;
+			display: flex;
+			p{
+				padding-left: 5px;
+				margin-bottom: 0;
+			}
+		}
+		.fl-footer-contact-info-address__email{
+			margin-bottom: 14px;
+			letter-spacing: 0;
+			font-size: 15px;
+			color: #cccccc;
+			a{
+				color: #cccccc;
+				transition: 0.3s ease;
+				&:hover{
+					transition: 0.3s ease;
+				}
+			}
+		}
+		.fl-contact-info-widget-link{
+			a{
+				font-size: 15px;
+				font-weight: 700;
+				text-transform: uppercase;
+				transition: .3s ease;
+				&:hover{
+					transition: 0.3s ease;
+				}
+			}
+		}
+	}
+
+	/*-------------------------------------------------------------------
+
+		==  Search widget
+
+	-------------------------------------------------------------------*/
+	@import 'widget_footer_style/_widget_search.scss';
+	/*-------------------------------------------------------------------
+
+    ==  Calendar widget
+
+    -------------------------------------------------------------------*/
+	@import 'widget_footer_style/_widget_calendar.scss';
+
+	/*-------------------------------------------------------------------
+
+    ==  Archive Widget
+
+    -------------------------------------------------------------------*/
+	@import 'widget_footer_style/_widget_archive.scss';
+	/*-------------------------------------------------------------------
+
+    ==  Recent Comments Widget
+
+    -------------------------------------------------------------------*/
+	@import 'widget_footer_style/_widget_recent_comments.scss';
+	/*-------------------------------------------------------------------
+
+    ==  Tag Widget
+
+    -------------------------------------------------------------------*/
+	@import 'widget_footer_style/_widget_tag.scss';
+	/*-------------------------------------------------------------------
+
+    ==  Meta Widget
+
+    -------------------------------------------------------------------*/
+	@import 'widget_footer_style/_widget_meta.scss';
+	/*-------------------------------------------------------------------
+
+    ==  RSS Widget
+
+    -------------------------------------------------------------------*/
+	@import 'widget_footer_style/_widget_rss.scss';
+	/*-------------------------------------------------------------------
+
+    ==  Recent Entries Widget
+
+    -------------------------------------------------------------------*/
+	@import 'widget_footer_style/_widget_recent_entries.scss';
+	/*-------------------------------------------------------------------
+
+    ==  Lasts Posts widget
+
+    -------------------------------------------------------------------*/
+	@import 'widget_footer_style/_widget_last-posts.scss';
+
+	/*-------------------------------------------------------------------
+
+    ==  Social
+
+    -------------------------------------------------------------------*/
+	@import 'widget_footer_style/_widget_social.scss';
+	/*-------------------------------------------------------------------
+
+    ==  Lasts Other Styles
+
+    -------------------------------------------------------------------*/
+	@import 'widget_footer_style/_widget_other_styles.scss';
+
+}

@@ -1,0 +1,210 @@
+//Style One
+.fl-events-style-one{
+  direction: ltr!important;
+  .fl-events--post{
+    display: flex;
+    background-color: #ffffff;
+
+    .fl-events-left-content{
+      position: relative;
+      padding: 0!important;
+      &:after{
+        background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0,#000 100%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: '';
+        opacity: .8;
+      }
+      img{
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+      }
+      .fl-countdown-clock{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 25px;
+        z-index: 1;
+        div{
+          display: inline-block;
+          span{
+            display: block;
+            padding: 5px 22px;
+          }
+          .fl-countdown-item{
+            font-size: 48px;
+          }
+        }
+      }
+    }
+    .fl-events-right-content{
+      padding: 60px;
+      .fl-entry-title{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 25px;
+      }
+      .fl-events-meta{
+        display: flex;
+        position: relative;
+        width: 100%;
+        content: '';
+        border-bottom: 3px solid transparent;
+        border-top: 3px solid transparent;
+        -webkit-border-image: url(../css/images/border_widget.png);
+        -o-border-image: url(../css/images/border_widget.png);
+        border-image-slice: 2;
+        border-image-outset: 0;
+        background-color: transparent;
+        margin-bottom: 35px;
+        div{
+          font-weight: 400;
+          padding-right: 15px;
+          span{
+            padding-right: 5px;
+          }
+          i{
+            padding-right: 15px;
+          }
+        }
+      }
+      .fl-events-excerpt{
+        margin-bottom: 50px;
+      }
+      a.fl-events-link{
+        padding: 20px 30px;
+        transition: all 0.3s;
+      }
+    }
+  }
+}
+
+.fl-events-style-one-nav{
+  display: flex;
+  direction: ltr!important;
+
+  .fl-prev{
+    font-size: 28px;
+    margin: auto;
+    margin-right: 0;
+    padding-right: 20px;
+    padding-top: 5px;
+  }
+  .fl-next{
+    font-size: 28px;
+    margin: auto;
+    margin-left: 0;
+    padding-left: 20px;
+    padding-top: 5px;
+  }
+}
+
+.fl-events-slider{
+  -webkit-box-shadow: -2px 2px 44px -19px rgba(0,0,0,0.1);
+  -moz-box-shadow: -2px 2px 44px -19px rgba(0,0,0,0.1);
+  box-shadow: -2px 2px 44px -19px rgba(0,0,0,0.1);
+}
+.fl-events-slider-nav{
+  width: 405px;
+  .slick-list{
+    height: 200px;
+    .fl-events--post {
+      margin-top: 60px;
+      background: transparent;
+    }
+    img{
+      width: 90%;
+      padding: 7px;
+      margin: 0 auto;
+    }
+    article.slick-center{
+      img{
+        width: 100%;
+        -webkit-box-shadow: -2px 2px 44px -19px rgba(0,0,0,0.9);
+        -moz-box-shadow: -2px 2px 44px -19px rgba(0,0,0,0.9);
+        box-shadow: -2px 2px 44px -19px rgba(0,0,0,0.9);
+        width: 100%;
+        background-color: #ffffff;
+      }
+    }
+  }
+}
+
+//Style Two
+.fl-events-style-two{
+  direction: ltr!important;
+  .fl-event-container{
+    margin: 0 48px;
+    .fl-events-left-content{
+      position: relative;
+      padding-bottom: 30px;
+      img{
+        margin: auto
+      }
+      .fl-event-date{
+        padding: 8px 55px;
+        border-bottom-left-radius: 25px;
+        border-top-right-radius: 25px;
+        display: block;
+        transition: all 300ms;
+        position: absolute;
+        top: 240px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin: 0 50px;
+        &:after{
+          content: '';
+          position: absolute;
+          width: 256px;
+          height: 20px;
+          left: 0;
+          right: 0;
+          padding: 0;
+          margin-left: auto;
+          margin-right: auto;
+          background: url(../css/images/ornament_after_post.png) no-repeat;
+          background-repeat: repeat-x;
+          bottom: 0;
+          top: 0;
+          opacity: .1;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+      }
+    }
+    .fl-events-right-content{
+      padding-top: 30px;
+      text-align: center;
+      .fl-entry-title{
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+      .fl-events-meta{
+        .fl-event-title{
+          a{
+            font-size: 22px;
+          }
+        }
+      }
+      .fl-events-excerpt{
+        padding: 30px 0;
+      }
+    }
+  }
+  .fl-events-slider-arrows{
+    text-align: center;
+    i{
+      font-size: 36px;
+      padding: 2px 10px;
+      transition: all 0.3s;
+    }
+  }
+}

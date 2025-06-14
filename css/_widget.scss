@@ -1,0 +1,175 @@
+/*-------------------------------------------------------------------
+
+==  Sidebar
+
+-------------------------------------------------------------------*/
+.sidebar{
+  .widget{
+	margin-bottom: 60px;
+	a{
+	  transition: .3s ease;
+	  &:hover{
+		transition: .3s ease;
+	  }
+	}
+	&:last-child{
+	  margin-bottom: 0!important;
+	}
+	//Reset Default ul and li styles
+	ul{
+	  list-style: none;
+	  li{
+		font-size: 15px;
+		list-style: none;
+		margin-bottom: 0;
+		  a{
+			  color: inherit;
+		  }
+	  }
+	}
+	// Widget Select
+	select{
+	  max-width: 100%;
+	  width: 100%;
+	  margin: 0 0 20px 0;
+	  resize: none;
+	  appearance: none;
+	  background: #fff url('../css/images/arrow-dropdown.png') center right 10px no-repeat;
+
+
+		width: 100%;
+		height: 100%;
+		margin-bottom: 0;
+		padding: 20px 62px 20px 20px;
+		border: 2px solid #eee!important;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		display: block;
+		background-color: #fff;
+		-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+		-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+		transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+		transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+		transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+		font-size: 15px;
+		letter-spacing: .02em;
+		-webkit-appearance: none;
+	}
+  }
+  .fl-widget--title {
+	font-size: 24px;
+	padding-bottom: 2px;
+	letter-spacing: .05em;
+	  margin: 0 0 12px;
+  }
+  .fl-widget-title-decor {
+	  width: 100%;
+	  content: '';
+	  border-bottom: 3px solid transparent;
+	  -webkit-border-image: url(../images/border_widget.png);
+	  -o-border-image: url(../images/border_widget.png);
+	  border-image-slice: 2;
+	  border-image-outset: 0;
+	  background-color: transparent;
+	  margin: 10px 0 35px 0;
+
+  }
+}
+/*-------------------------------------------------------------------
+
+==  Search widget
+
+-------------------------------------------------------------------*/
+@import 'widget/_widget_search.scss';
+/*-------------------------------------------------------------------
+
+==  Calendar widget
+
+-------------------------------------------------------------------*/
+@import 'widget/_widget_calendar.scss';
+
+/*-------------------------------------------------------------------
+
+==  Archive Widget
+
+-------------------------------------------------------------------*/
+@import 'widget/_widget_archive.scss';
+/*-------------------------------------------------------------------
+
+==  Recent Comments Widget
+
+-------------------------------------------------------------------*/
+@import 'widget/_widget_recent_comments.scss';
+/*-------------------------------------------------------------------
+
+==  Tag Widget
+
+-------------------------------------------------------------------*/
+@import 'widget/_widget_tag.scss';
+/*-------------------------------------------------------------------
+
+==  Meta Widget
+
+-------------------------------------------------------------------*/
+@import 'widget/_widget_meta.scss';
+/*-------------------------------------------------------------------
+
+==  RSS Widget
+
+-------------------------------------------------------------------*/
+@import 'widget/_widget_rss.scss';
+/*-------------------------------------------------------------------
+
+==  Recent Entries Widget
+
+-------------------------------------------------------------------*/
+@import 'widget/_widget_recent_entries.scss';
+/*-------------------------------------------------------------------
+
+==  Newest works widget
+
+-------------------------------------------------------------------*/
+@import 'widget/_widget_newest-works.scss';
+/*-------------------------------------------------------------------
+
+==  Newest works widget
+
+-------------------------------------------------------------------*/
+@import 'widget/_widget_newest-works.scss';
+/*-------------------------------------------------------------------
+
+==  Lasts Posts widget
+
+-------------------------------------------------------------------*/
+@import 'widget/_widget_last-posts.scss';
+/*-------------------------------------------------------------------
+
+==  Contact Us
+
+-------------------------------------------------------------------*/
+@import 'widget/_widget_contact_us.scss';
+/*-------------------------------------------------------------------
+
+==  About Company
+
+-------------------------------------------------------------------*/
+@import 'widget/_widget_about.scss';
+/*-------------------------------------------------------------------
+
+==  Social
+
+-------------------------------------------------------------------*/
+@import 'widget/_widget_social.scss';
+
+/*-------------------------------------------------------------------
+
+==  Lasts Other Styles
+
+-------------------------------------------------------------------*/
+@import 'widget/_widget_other_styles.scss';
+/*-------------------------------------------------------------------
+
+==  Mailchimp Widget
+
+-------------------------------------------------------------------*/
+@import 'widget/_widget_mailchimp.scss';

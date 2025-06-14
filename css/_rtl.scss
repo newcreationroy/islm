@@ -1,0 +1,287 @@
+.rtl{
+	direction: rtl;
+
+	.fl-full-width-search-form .fl-full-width-search-wrapper .fl-form-bottom-text{
+		text-align: right!important;
+	}
+
+	//Header
+	.fl--header{
+		.fl--header-topbar{
+			.fl--header-topbar-left{
+				text-align: right;
+				span{
+					display: inline-block;
+					padding-right: 10px;
+					padding-left: 50px;
+				}
+			}
+			.fl--header-topbar-right{
+				text-align: left;
+			}
+		}
+		.fl-header-menu-container{
+			.fl--logo-container{
+
+			}
+			.fl--navigation-container{
+				.fl--navigation-style-one{
+					.menu{
+						float: left;
+					}
+				}
+			}
+		}
+	}
+
+	.fl--page-header{
+		.breadcrumbs_heading{
+			.fl-breadcrumbs-delimiter{
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	//Footer
+	.fl--footer{
+		.fl-top-footer{
+			.row{
+				.fl-footer-column{
+					.fl-footer-sidebar{
+						text-align: right;
+						.fl_contact_info_widget{
+							.fl-footer-contact-info-address__email{
+								.fl-contact-info-widget-address{
+									text-align: right;
+								}
+								.fl-contact-info-widget-phone{
+									text-align: right;
+								}
+								.fl-contact-info-widget-email{
+									text-align: right;
+								}
+							}
+						}
+						.fl-widget--title{
+							text-align: right;
+						}
+						.widget_nav_menu{
+							ul{
+								padding-right: 0px;
+								padding-left: 34px;
+								li{
+									a{
+										padding-right: 0px;
+										padding-left: 10px;
+									}
+								}
+							}
+						}
+					}
+					.fl-footer-socials{
+						text-align: right;
+					}
+				}
+			}
+		}
+		.fl--subscribe-contain{
+			.fl--subscribe{
+				.fl--subscribe-input{
+					form{
+						input[type=submit]{
+							left: 0!important;
+						}
+						label{
+							padding-right: 0px!important;
+							padding-left: 25px!important;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//Blog
+	.fl_main{
+		.fl_content{
+			.fl--blog-style-standard{
+				.fl-post--item{
+					.fl-post-bottom-content{
+						padding: 0 0 50px 50px;
+						text-align: right;
+					}
+					.fl-post-top-content{
+						.fl-post--holder{
+							.fl-post-category-standard{
+								left: unset;
+								right: 35px;
+							}
+						}
+					}
+				}
+			}
+			.fl-content-wrapper{
+				.fl-post-content-top{
+					article{
+						text-align: right;
+					}
+				}
+				.fl-post-content-bottom{
+					.fl-comments-container{
+						text-align: right;
+					}
+				}
+			}
+		}
+		.sidebar-container{
+			text-align: right;
+			.widget_search{
+				.searchinput{
+					padding: 20px 20px 20px 62px;
+				}
+				.searchsubmit{
+					left: 0;
+					right: unset;
+					i{
+						border-left: unset;
+						border-right: 1px #eee solid;
+					}
+				}
+			}
+		}
+		.sidebar_right{
+			float: left;
+		}
+		.sidebar_left{
+			float: right;
+		}
+	}
+
+	//Blog Post Two
+	.fl--blog-post-div-two{
+		text-align: right;
+	}
+
+	//Icon Box
+	.fl-icon-box.fl-icon-box-style--2 .fl-icon-box-wrapper .fl-icon-box-content{
+		direction: rtl;
+	}
+	.fl-icon-box.fl-icon-box-style--4 .fl-icon-box-wrapper .fl-icon-box-title-contain{
+		direction: rtl;
+	}
+	.fl-icon-box.fl-icon-box-style--4 .fl-icon-box-wrapper{
+		text-align: right;
+	}
+	.fl-icon-box.fl-icon-box-style--3 .fl-icon-box-wrapper{
+		direction: rtl;
+	}
+	.fl-icon-box.fl-icon-box-style--2 .fl-icon-box-wrapper{
+		direction: rtl;
+	}
+	.text-left{
+		text-align: right!important;
+	}
+
+	//Donation
+	.fl-donate-style-four .fl-post-give .fl-give-content .fl-post-give-content .fl-give-excerpt p{
+		direction: rtl;
+	}
+	.fl-donate-style-three .fl-post-give .fl-give-content .fl-post-give-content .fl-entry-title{
+		direction: rtl;
+	}
+	.fl-donate-style-three .fl-post-give .fl-give-content .fl-post-give-content .fl-give-excerpt{
+		direction: rtl;
+	}
+
+	//VC Events
+	.fl-events-style-one .fl-events--post .fl-events-right-content .fl-events-excerpt{
+		direction: rtl;
+	}
+	.fl-events-style-one {
+		.fl-events--post{
+			.fl-events-right-content{
+				text-align: right;
+				.fl-events-meta{
+					justify-content: flex-end;
+					.fl-event-address{
+						padding-right: 0px;
+					}
+				}
+			}
+		}
+	}
+	.fl--events-featured-content-vc {
+		.fl-events--featured-post{
+			.fl-events-right-content{
+				text-align: right;
+				.fl-events-meta{
+					justify-content: flex-end;
+					.fl-event-address{
+						padding-right: 0px;
+					}
+				}
+			}
+		}
+	}
+	.fl--events-archive-content-vc{
+		text-align: right;
+		i{
+			padding-right: 0px!important;
+			padding-left: 11px;
+		}
+	}
+	.fl--events-featured-content-vc .fl-events--featured-post .fl-events-right-content .fl-events-excerpt{
+		direction: rtl;
+	}
+	//VC Donates
+	.fl-donate-style-one{
+		text-align: right;
+	}
+	.fl-donate-style-two .fl-post-give .fl-give-content .fl-post-give-content .fl-give-excerpt{
+		direction: rtl;
+	}
+	.fl-donate-style-two .fl-post-give .fl-give-content .fl-post-give-content{
+		text-align: right;
+	}
+
+	//VC Contacts
+	.fl-contact-info{
+		text-align: right;
+	}
+	.wpcf7-form{
+		text-align: right;
+		input{
+			text-align: right;
+			padding: 15px 20px 15px 62px;
+		}
+		textarea{
+			text-align: right;
+			padding: 15px 20px 15px 62px;
+		}
+	}
+
+	//Donates form
+	form[id*=give-form] .give-donation-amount{
+		float: right;
+		margin: 0 auto;
+	}
+	#give-donation-level-button-wrap>li{
+		float: unset;
+	}
+	#give-donation-level-button-wrap{
+		margin-left: auto;
+		margin-right: 0;
+	}
+	.give-modal form[id*=give-form] .give-payment-mode-label{
+		text-align: right;
+	}
+	#give-payment-mode-wrap, #give_purchase_form_wrap{
+		text-align: right;
+	}
+	form[id*=give-form] #give-final-total-wrap .give-final-total-amount{
+		float: unset;
+	}
+	.give-submit-button-wrap .give-submit{
+		float: unset;
+	}
+}

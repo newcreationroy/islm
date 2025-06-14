@@ -1,0 +1,87 @@
+.fl-vc-prayer-times{
+	background: #ffffff;
+	border-top-left-radius: 25px;
+	padding-bottom: 35px;
+	-webkit-box-shadow: 0px 0px 35px -21px rgba(0,0,0,0.7);
+	-moz-box-shadow: 0px 0px 35px -21px rgba(0,0,0,0.7);
+	box-shadow: 0px 0px 35px -21px rgba(0,0,0,0.7);
+	.fl-prayer-times-title-contain{
+		text-align: center;
+		padding: 25px 0;
+		border-top-left-radius: 25px;
+		border-bottom-right-radius: 25px;
+		position: relative;
+		.fl-prayer-times-title{
+			font-size: 26px;
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			width: 380px;
+			height: 34px;
+			left: 0;
+			right: 0;
+			padding: 0;
+			margin-left: auto;
+			margin-right: auto;
+			background: url(../css/images/ornament_after_post.png) no-repeat;
+			background-repeat: repeat-x;
+			bottom: 0;
+			top: 0;
+			opacity: .1;
+			margin-top: auto;
+			margin-bottom: auto;
+			background-size: contain;
+		}
+	}
+	.fl-prayer-times-date-contain{
+		margin: 35px 0;
+		text-align: center;
+		padding: 0 65px;
+		.fl-prayer-times-islamic-date{
+			.fl-prayer-times-date{
+				display: block;
+			}
+		}
+	}
+	.fl-prayer-times-contain{
+		.tmpray--pray-time-container{
+			position: relative;
+			div{
+				padding: 5px 120px;
+				span:first-child{
+					font-weight: 600;
+				}
+
+			}
+
+			&:before{
+				content: '';
+				position: absolute;
+				left: 80px;
+				width: 26px;
+				height: 26px;
+				padding: 0;
+				margin-left: auto;
+				margin-right: auto;
+				background: url(../css/images/praytime_icon.png) no-repeat;
+				background-repeat: repeat-x;
+				bottom: 0;
+				top: 0;
+				margin-top: auto;
+				margin-bottom: auto;
+				background-size: contain;
+			}
+			&:nth-child(2n+1){
+				background: rgba(237,237,237,1);
+				background: -moz-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+				background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,237,237,1)), color-stop(53%, rgba(246,246,246,1)), color-stop(100%, rgba(255,255,255,1)));
+				background: -webkit-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+				background: -o-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+				background: -ms-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+				background: linear-gradient(to right, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=1 );
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+.fl-animated-typing{
+	.typed-cursor{
+	  display: none;
+	}
+  //Style One
+  &.fl-animated-typing-style--1{
+	.fl-text-wrapper{
+	  display: inline-block;
+	  line-height: 1.5;
+	  font-size: 20px;
+	  color: #222;
+	}
+	.fl-author-content{
+	  margin-top: 30px;
+	  text-transform: uppercase;
+	  color: #666;
+	  .fl-author-name{
+		font-size: 12px;
+	  }
+	  .fl-author-profession{
+		margin-left: 5px;
+		font-size: 10px;
+		margin-bottom: 2px;
+	  }
+	}
+
+  }
+  //Style Two
+  &.fl-animated-typing-style--2{
+	.fl-text-wrapper{
+	  display: inline-block;
+	  font-size: 16px;
+	}
+  }
+}

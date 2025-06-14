@@ -1,0 +1,140 @@
+.fl-full-width-search-form {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(34, 34, 34, 0.95);
+  z-index: 9999;
+  display: none;
+  //Button Close
+  .fl--search-icon-menu {
+	opacity: 1;
+	visibility: visible;
+	transition: opacity .6s ease-in;
+	border: 0;
+	border-radius: 0;
+	position: fixed;
+	height: 50px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	vertical-align: top;
+	width: 50px;
+	top: 50px;
+	right: 20px;
+	z-index: 99999;
+	cursor: pointer;
+	&:before {
+	  font-family: fl-custom-icon-font;
+	  content: '\e81b';
+	  color: #fff !important;
+	  position: absolute;
+	  top: 0;
+	  width: 100%;
+	  height: 100%;
+	  font-size: 15px;
+	  left: 0;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+  }
+  //Content Wrapper
+  .fl-full-width-search-wrapper {
+	margin: 0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	max-width: 1140px;
+	width: 100%;
+	height: 100%;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	form.search_global {
+	  width: 100%;
+	  fieldset {
+		position: relative;
+		.fl--input-wrapper{
+		  input[type="text"] {
+			color: #fff!important;
+			width: 100%;
+			margin-bottom: 0;
+			padding-top: 6px;
+			padding-left: 0;
+			padding-right: 90px;
+			border: none;
+			border-bottom: 3px solid #fff!important;
+			line-height: 1;
+			display: block;
+			background-color: transparent;
+			transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+			font-size: 40px;
+			min-height: 75px;
+			letter-spacing: .02em;
+			&::placeholder{
+			  color: #fff;
+			}
+		  }
+		  &:after {
+			letter-spacing: .02em;
+			content: attr(data-text);
+			line-height: 0;
+			max-width: 100%;
+			border-bottom: 3px solid;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 3px;
+			font-size: 40px;
+			overflow: hidden;
+			user-select: none;
+			color: transparent;
+		  }
+		}
+		.searchsubmit {
+		  .submit-btn {
+			z-index: 3;
+			position: absolute;
+			top: 0;
+			right: 5px;
+			width: 70px;
+			height: 100%;
+			padding-right: 20px;
+			line-height: 1;
+			text-align: center;
+			border: none;
+			background-color: transparent;
+		  }
+		  i {
+			transition: .4s ease-in;
+			z-index: 2;
+			color: #fff!important;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 100px;
+			height: 75px;
+			line-height: 75px;
+			text-align: center;
+			padding-left: 20px;
+			font-size: 38px;
+		  }
+		}
+
+	  }
+	}
+	.fl-form-bottom-text {
+	  margin-top: 10px;
+	  width: 100%;
+	  text-align: left;
+	  color: #ffffff;
+	}
+  }
+
+}
+
+

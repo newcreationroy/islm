@@ -1,0 +1,21 @@
+.widget_meta {
+  ul {
+	background: #fff;
+	  margin-left: 0px;
+	li {
+	  padding-bottom: 13px;
+		&:before{
+			content: unset;
+		}
+	  a {
+		  &:hover{
+			  color: #777777;
+		  }
+	  }
+	  &:last-child {
+		padding-bottom: 0;
+	  }
+	}
+  }
+
+}

@@ -1,0 +1,25 @@
+.widget_recent_comments {
+  .recentcomments {
+	  font-size: 11px!important;
+	padding: 10px 0;
+	color: $color_text;
+	&:first-child {
+	  padding-top: 0;
+	}
+	&:last-child {
+	  padding-bottom: 0;
+	}
+	  a{
+		  color: $color_text;
+		  line-height: 1.4 ;
+	  }
+	.comment-author-link{
+	  a{
+		color: $color_text;
+	  }
+	}
+  }
+  ul{
+	padding: 0;
+  }
+}

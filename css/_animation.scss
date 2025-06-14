@@ -1,0 +1,49 @@
+@keyframes loading_animation {
+  0%   {opacity: 1;}
+  50%  {opacity: 0.6;}
+  100% {opacity: 1;}
+}
+
+@keyframes jelly {
+
+  from {
+	transform: scale(1, 1);
+  }
+  30% {
+	transform: scale(1.05, 0.75);
+  }
+  40% {
+	transform: scale(0.75, 1.15);
+  }
+  50% {
+	transform: scale(1.05, 0.85);
+  }
+  to{
+	transform: scale(1, 1);
+  }
+}
+@keyframes dots-scale {
+  from {
+	transform: scale(1, 1);
+  }
+  50% {
+	transform: scale(0.8, 0.8);
+  }
+  to{
+	transform: scale(1, 1);
+  }
+}
+@keyframes alertClose {
+  0% {
+	opacity: 1;
+
+  }
+  50% {
+
+	opacity: 0.5;
+  }
+  100%{
+
+	opacity: 0;
+  }
+}
