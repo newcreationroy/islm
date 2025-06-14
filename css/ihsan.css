@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'ihsan';
+  src: url('../fonts/ihsan.eot?76077125');
+  src: url('../fonts/ihsan.eot?76077125#iefix') format('embedded-opentype'),
+       url('../fonts/ihsan.woff2?76077125') format('woff2'),
+       url('../fonts/ihsan.woff?76077125') format('woff'),
+       url('../fonts/ihsan.ttf?76077125') format('truetype'),
+       url('../fonts/ihsan.svg?76077125#ihsan') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'ihsan';
+    src: url('../font/ihsan.svg?76077125#ihsan') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "ihsan";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-icon1:before { content: '\e800'; } /* '' */
+.icon-icon2:before { content: '\e801'; } /* '' */
+.icon-icon3:before { content: '\e802'; } /* '' */
+.icon-icon4:before { content: '\e803'; } /* '' */
+.icon-icon5:before { content: '\e804'; } /* '' */
+.icon-icon6:before { content: '\e805'; } /* '' */
+.icon-icon7:before { content: '\e806'; } /* '' */
+.icon-icon8:before { content: '\e807'; } /* '' */
+.icon-icon9:before { content: '\e808'; } /* '' */
+.icon-icon10:before { content: '\e809'; } /* '' */
+.icon-icon11:before { content: '\e80a'; } /* '' */
+.icon-icon12:before { content: '\e80b'; } /* '' */
+.icon-icon13:before { content: '\e80c'; } /* '' */
+.icon-icon14:before { content: '\e80d'; } /* '' */
+.icon-icon15:before { content: '\e80e'; } /* '' */
+.icon-icon16:before { content: '\e80f'; } /* '' */
+.icon-icon17:before { content: '\e810'; } /* '' */
